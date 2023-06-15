@@ -1,0 +1,9 @@
+:root {
+    --main-color: black;
+}
+
+body {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
+    color: var(--main-color);
+    background-color: wheat;
+}
