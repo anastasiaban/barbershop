@@ -1,9 +1,61 @@
 :root {
-    --main-color: black;
+  --main-color: #303030;
+  --nav-color: #ffffff;
+  --hover-focus-color: #ff6c00;
 }
 
 body {
-    font-family: 'Open Sans', 'Raleway', sans-serif;
-    color: var(--main-color);
-    background-color: wheat;
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*---------header---elements------------*/
+.navigation {
+  display: contents;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 100px;
+}
+
+.navigation-item-link {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--nav-color);
+}
+
+.navigation-item-link:hover,
+.navigation-item-link:focus {
+  color: var(--hover-focus-color);
 }
