@@ -22,6 +22,10 @@ a {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +39,22 @@ a {
   overflow: hidden;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*---------header---elements------------*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navigation {
   display: contents;
   align-items: center;
@@ -58,4 +77,36 @@ a {
 .navigation-item-link:hover,
 .navigation-item-link:focus {
   color: var(--hover-focus-color);
+}
+
+.header-contacts-link {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--nav-color);
+
+  margin-right: 43px;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--hover-focus-color);
+}
+
+.header-contacts-button {
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--nav-color);
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 11px 20px;
+  margin-right: 17px;
+}
+.header-contacts-button:hover,
+.header-contacts-button:focus {
+  background-color: var(--hover-focus-color);
 }
