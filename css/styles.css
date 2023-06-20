@@ -1,5 +1,6 @@
 :root {
-  --main-color: #303030;
+  --main-color-dark: #303030;
+  --main-color-light: ;
   --nav-color: #ffffff;
   --hover-focus-color: #ff6c00;
   --paragraph-title-color: rgba(157, 164, 189, 0.6);
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: var(--main-color);
   background-color: #e5e5e5;
