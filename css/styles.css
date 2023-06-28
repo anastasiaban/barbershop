@@ -72,8 +72,8 @@ img {
 }
 
 .section {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /*---------header---elements------------*/
@@ -82,8 +82,7 @@ img {
 }
 .main-header {
 }
-.container {
-}
+
 .navigation {
   display: flex;
 }
@@ -145,8 +144,7 @@ img {
 
 .hero {
 }
-.container {
-}
+
 .left-side-hero {
 }
 
@@ -154,8 +152,12 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.hero .social-list {
   transform: rotate(-90deg);
 }
+
 .social-list-item {
 }
 
@@ -170,6 +172,9 @@ img {
 }
 
 .right-side-hero {
+  background-image: url('../images/herobgrd.jpg');
+
+  background-size: cover;
 }
 
 .sup-hero-text {
@@ -259,6 +264,8 @@ img {
 
 /*------------------Services and prices---------------------*/
 .services {
+  background-image: url('../images/servicesbgr.jpg');
+  background-size: cover;
 }
 
 .sup-services-text {
@@ -396,7 +403,6 @@ img {
 }
 
 .social-list-icon {
-  fill: currentColor;
 }
 
 .barbers-social-item {
@@ -436,6 +442,8 @@ img {
 /*--------CONTACT INFORMATION-------------*/
 
 .contact-form-section {
+  background-image: url('../images/footerbgr.jpg');
+  background-size: cover;
 }
 
 .contact-form-title {
