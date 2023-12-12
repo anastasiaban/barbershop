@@ -66,7 +66,8 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -79,11 +80,18 @@ img {
 /*---------header---elements------------*/
 
 .header-page {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  background-color: gray;
 }
 .main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #ff6c00 1px solid;
 }
 
-.navigation {
+.header-navigation {
   display: flex;
 }
 .logo {
@@ -92,10 +100,7 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
-}
-
-.navigation-item + .navigation-item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .navigation-item {
@@ -117,9 +122,12 @@ img {
   font-size: 12px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-left: auto;
 }
 
 .header-btn {
+  margin-left: 43px;
+  background-color: transparent;
 }
 .dark-btn {
   color: var(--second-main-dark-color);
@@ -130,7 +138,8 @@ img {
   text-transform: uppercase;
   border-radius: 25px;
   border: 1px solid #ff6c00;
-
+  min-width: 160px;
+  height: 36px;
   padding: 11px 20px;
 }
 
@@ -145,6 +154,11 @@ img {
 .hero {
 }
 
+.two-sides-hero {
+  border: #ff6c00 1px solid;
+  display: flex;
+}
+
 .left-side-hero {
 }
 
@@ -155,7 +169,7 @@ img {
 }
 
 .hero .social-list {
-  transform: rotate(-90deg);
+  width: 100px;
 }
 
 .social-list-item {
@@ -172,14 +186,22 @@ img {
 }
 
 .right-side-hero {
-  background-image: url('../images/herobgrd.jpg');
+  /* background-image: url('../images/herobgrd.jpg');
+  background-size: cover;*/
+  background-color: blue;
+  flex-grow: 1;
+}
 
-  background-size: cover;
+.right-side-text {
+  max-width: 360px;
+  width: 100%;
+  padding: 307px 100px 288px;
 }
 
 .sup-hero-text {
   color: var(--par-title-color);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -188,6 +210,7 @@ img {
   font-family: var(--second-font);
   font-weight: 700;
   letter-spacing: 3.6px;
+  margin-bottom: 20px;
 }
 
 .hero-text {
@@ -198,6 +221,9 @@ img {
 }
 
 .hero-direction {
+  display: flex;
+  gap: 64px;
+  justify-content: end;
 }
 
 .hero-direction-item {
@@ -211,6 +237,7 @@ img {
   color: var(--second-main-dark-color);
   text-align: right;
   letter-spacing: 1.1px;
+  margin-right: 20px;
 }
 
 /*----------------ABOUT-------------------------*/
