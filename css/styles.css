@@ -436,9 +436,15 @@ img {
   background-color: var(--item-color);
 }
 
+.our-barbers-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .sup-barbers-text {
   color: var(--main-light-color);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .barbers-title {
@@ -447,6 +453,7 @@ img {
   font-family: var(--second-font);
   font-weight: 700;
   letter-spacing: 2.1px;
+  margin-bottom: 44px;
 }
 
 .barbers-list {
@@ -456,6 +463,7 @@ img {
 }
 
 .barbers-item {
+  margin-bottom: 30px;
 }
 
 .barbers-name {
@@ -463,6 +471,7 @@ img {
   text-align: center;
   font-size: 18px;
   letter-spacing: 0.36px;
+  margin-bottom: 8px;
 }
 
 .barbers-vacancy {
@@ -470,6 +479,7 @@ img {
   text-align: center;
   font-size: 14px;
   letter-spacing: 0.28px;
+  margin-bottom: 30px;
 }
 
 .barbers-socials {
@@ -501,10 +511,14 @@ img {
 
 .gallery {
 }
-
+.gallery-container {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 .sup-gallery-text {
   color: var(--main-light-color);
   text-transform: uppercase;
+  margin-bottom: 44px;
 }
 
 .gallery-list {
@@ -520,7 +534,11 @@ img {
 }
 
 /*--------CONTACT INFORMATION-------------*/
-
+.booking-contacts-container {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 111px;
+}
 .contact-form-section {
   background-image: url('../images/footerbgr.jpg');
   background-size: cover;
